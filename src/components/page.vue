@@ -2,7 +2,7 @@
     <div class="page">
         <div class="container mx-auto">
             <!-- box1 -->
-            <div class="content-box flex">
+            <div class="content-box flex py-24">
                 <div class="text-box flex-1 px-8">
                     <div class="alignY-Box">
                         <p class="title font-bold text-4xl">Getting started is easy</p>
@@ -20,7 +20,7 @@
             </div>
 
             <!-- box2 -->
-            <div class="content-box flex">
+            <div class="content-box flex py-24">
                 <div class="flex-1">
                     <img src="../assets/img2.jpg" class="img-box w-9/12">
                 </div>
@@ -46,7 +46,7 @@
             </div>
 
             <!-- box3 -->
-            <div class="content-box flex">
+            <div class="content-box flex py-24">
                 <div class="text-box flex-1 px-8">
                     <div class="alignY-Box">
                         <svg class="c60__icon m-6" xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 107 89">
@@ -112,8 +112,8 @@ export default {
 
     /* P 最好不要Before */
     div.text P span{
-        width: 6px;
-        height:6px;
+        width: 0.45em;
+        height:0.45em;
         position: absolute;
         display: block;
         background-color: theme('colors.blue.100');
@@ -125,7 +125,6 @@ export default {
         position: relative;
     }
     .content-box{
-        height: 650px;
         border-bottom: 1px solid #ccc;
     }
     .text-box{
