@@ -1,16 +1,20 @@
 <template>
   <div id="app">
-    <page></page>
+    <swiper></swiper>
+    <middle></middle>
+    <inner-page></inner-page>
   </div>
 </template>
 
 <script>
-import page from './components/page.vue'
+import swiper from './components/swiper.vue'
+import middle from './components/middle.vue'
+import innerPage from './components/innerPage.vue'
 
 export default {
   name: 'app',
   components: {
-    page
+    swiper,middle,innerPage
   }
 }
 </script>
