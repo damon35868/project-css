@@ -48,7 +48,7 @@ export default {
 <style scoped>
   .swiper-container {
     height: auto;
-    max-height: 800px;
+    max-height: 700px;
   }  
   .swiper-pagination>>>.swiper-pagination-bullet{
     opacity: 1;
