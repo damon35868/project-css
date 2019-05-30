@@ -13,7 +13,6 @@
                 </swiper-slide>
 
                 <!-- Optional controls -->
-                <div class="swiper-scrollbar"></div>
                 <div class="swiper-button-prev swiper-button-white" slot="button-prev"></div>
                 <div class="swiper-button-next swiper-button-white" slot="button-next"></div>
                 </swiper>
@@ -108,10 +107,6 @@ export default {
                 //1.5s切换一次
                 autoplay: 1500,
                 setWrapperSize :true,
-                scrollbar:'.swiper-scrollbar',
-                scrollbarHide : false,
-                scrollbarDraggable : true ,
-                scrollbarSnapOnRelease : true ,
                 loop:true,
                 //鼠标点击分页器控制Swiper切换
                 paginationClickable :true,
@@ -123,7 +118,10 @@ export default {
                 prevButton: '.swiper-button-prev',
             },
             list:[
-                {'src':'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1665022806,3983962960&fm=15&gp=0.jpg'},
+                {'src':'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1559234889610&di=d09aeff4b3a83a67842ea74b2a5815c8&imgtype=jpg&src=http%3A%2F%2Fplat.renew.sh.cn%2Ffiles%2Fuseruploadfiles%2Fday_130925%2F2013-09-25_145215901.jpg'},
+                {'src':'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1559829647&di=f2bf23d070c9db4448b7b47f5d77fe43&imgtype=jpg&er=1&src=http%3A%2F%2Fb1-q.mafengwo.net%2Fs13%2FM00%2FDA%2F61%2FwKgEaVzGqgSAPuT2AA1oMGHfWPc01.jpeg%3FimageView2%2F2%2Fw%2F600%2Fh%2F600%2Fq%2F90'},
+                {'src':'https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3882489327,3440733051&fm=26&gp=0.jpg'},
+                
             ],
             showState3:true,
             showState4:true,
