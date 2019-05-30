@@ -7,10 +7,18 @@ module.exports = {
         200: '#a8d6f8'
       },
       gray:{
-        100:'#ccc'
+        100:'#ccc',
+        200:'#eee'
       },
       white:{
         100:'#fff'
+      },
+      black:{
+        100:'#000',
+        200:'#484848'
+      },
+      green:{
+        100:'#018489'
       }
     },
   variants: {

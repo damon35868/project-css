@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import App from './App.vue'
-
+import router from './router.js'
 //引入vue-awesome-swiper
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import 'swiper/dist/css/swiper.css'
@@ -12,7 +12,7 @@ import tailwindcss from 'tailwindcss'
 import "tailwindcss/dist/base.css";
 import "tailwindcss/dist/components.css";
 import "tailwindcss/dist/utilities.css";
-import "./assets/css/tailwindCofig.css"
+import "./assets/css/tailwindCofig.css";
 //挂载tailwindcss
 Vue.use(tailwindcss);
 
@@ -20,4 +20,5 @@ Vue.config.productionTip = false
 
 new Vue({
   render: h => h(App),
+  router
 }).$mount('#app')

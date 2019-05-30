@@ -15,14 +15,14 @@
                     </div>  
                 </div>
                 <div class="flex-1">
-                    <img src="../assets/img/img1.jpg" class="img-box w-9/12">
+                    <img src="../../assets/img/img1.jpg" class="img-box w-9/12">
                 </div>
             </div>
 
             <!-- box2 -->
             <div class="content-box flex py-24">
                 <div class="flex-1">
-                    <img src="../assets/img/img2.jpg" class="img-box w-9/12">
+                    <img src="../../assets/img/img2.jpg" class="img-box w-9/12">
                 </div>
 
                 <div class="text-box text-box-2 flex-1 px-8">
@@ -64,7 +64,7 @@
                     </div>  
                 </div>
                 <div class="flex-1">
-                    <img src="../assets/img/img3.jpg" class="img-box w-4/5">
+                    <img src="../../assets/img/img3.jpg" class="img-box w-4/5">
                 </div>
             </div>
             
