@@ -1,5 +1,5 @@
 <template>
-    <div class="airbnbPageHome py-10">
+    <div class="airbnbPageHome p-4">
         <middle-top></middle-top>
         <middle-bottom></middle-bottom>
     </div>
@@ -18,11 +18,6 @@ export default {
 </script>
 
 <style scoped>
-    @media (max-width: 767px){
-        .airbnbPageHome{
-            padding: 0 1em;
-        }
-    }
     @media (min-width: 1600px) {
         .container {
             max-width: 1344px!important;
