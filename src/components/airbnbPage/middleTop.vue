@@ -5,7 +5,7 @@
                 <img src="../../assets/img/share-arrow-swiper.svg" class="w-5 inline-block mr-2 cursor-pointer">
                 <img src="../../assets/img/like-swiper.svg" class="w-5 inline-block mr-2 cursor-pointer">
             </div>
-            <div :class="{swiper:fixedState,fixed:fixedState}" :style="{top: fixedTop,width:bannerWidth}">  
+            <div :class="{swiper:fixedState,fixed:fixedState}" :style="{top: fixedTop,width:bannerWidth}" ref="moveEle">  
                  <swiper :options="swiperOption" ref="mySwiper" v-if="list.length!=0">
                 <!-- slides -->
                 <swiper-slide v-for="(item,key) in list" :key="key">
@@ -133,17 +133,24 @@ export default {
             textBox4:'Apart from just the recipe and preparation techniques, I will teach you how to add Japanese spirit into your udon noodles, to make the dish complete. After making the udon your friendly host…',
             screenWidth: document.body.clientWidth,
             scrollTop:document.documentElement.scrollTop,
-            bannerWidth:''
+            bannerWidth:'',
+            clientHeight:'',
+            eleWidth:'',
+            eleHeight:''
         }
     },
     mounted () {
         const that = this;
         that.bannerWidth = that.$refs.banner.offsetWidth + 'px';
         that.clientHeight = that.$refs.banner.clientHeight;
-        
+        that.eleWidth = that.$refs.moveEle.getBoundingClientRect().width;
+        that.eleHeight = that.eleWidth * 1.33333333333333;
         window.addEventListener('resize',()=>{
             that.screenWidth = document.body.clientWidth;
             that.bannerWidth = that.$refs.banner.offsetWidth + 'px';
+            that.clientHeight = that.$refs.banner.clientHeight;
+            that.eleWidth = that.$refs.moveEle.getBoundingClientRect().width;
+            that.eleHeight = that.eleWidth * 1.33333333333333;
         });
         window.addEventListener('scroll',()=>{
             that.scrollTop = document.documentElement.scrollTop;
@@ -179,11 +186,12 @@ export default {
             }
         },
         scrollTop (val) {
-            if(val >= 43 && val <= 900 && this.screenWidth > 750){
+            let clientTop = this.clientHeight - this.eleHeight;
+            if(val >= 43 && val <= clientTop && this.screenWidth > 750){
                 this.fixedState = true;
-            }else if(val >= 900 && this.screenWidth > 750){
-               this.fixedTop = -(val - 900 - 1) + "px";
-               this.fixedState = true;
+            }else if(val >= clientTop && this.screenWidth > 750){
+                  this.fixedTop = -(val - clientTop) + "px";
+                  this.fixedState = true;
             }else{
                 this.fixedState = this.fixedState ? false : this.fixedState;
             }
