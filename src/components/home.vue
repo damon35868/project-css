@@ -37,4 +37,11 @@
   color: theme('colors.white.100');
   background-color: theme('colors.blue.100');
 }
+
+@media (max-width: 800px) {
+    .link-twitter,
+    .link-airbnb{
+      font-size: 1.5em;
+    }
+}
 </style>
