@@ -18,7 +18,6 @@
                 <div class="swiper-button-next swiper-button-white" slot="button-next"></div>
                 </swiper>
             </div>
-           
         </div>
 
         <div class="box-right flex-1 text-gray-700">
