@@ -74,10 +74,7 @@ export default {
         }
         .img-div div:nth-child(1),
         .img-div div:nth-child(4){
-            margin: 0.5em;
-        }
-        .img-div div:nth-child(odd){
-            margin-left: 0;
+            margin-left: 0.5em;
         }
         .img-div div{
             width: calc(100% / 2 - 1em);
