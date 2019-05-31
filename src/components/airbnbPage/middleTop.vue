@@ -186,8 +186,9 @@ export default {
         },
         scrollTop (val) {
             let clientTop = this.clientHeight - this.eleHeight;
-            if(val >= 20 && val <= clientTop && this.screenWidth > 750){
+            if(val >= 16 && val <= clientTop && this.screenWidth > 750){
                 this.fixedState = true;
+                this.fixedTop = 0;
             }else if(val >= clientTop && this.screenWidth > 750){
                   this.fixedTop = -(val - clientTop) + "px";
                   this.fixedState = true;
