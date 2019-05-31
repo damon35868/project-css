@@ -1,4 +1,4 @@
-# project-css
+# inner-pages
 
 ## Project setup
 ```
