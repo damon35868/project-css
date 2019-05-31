@@ -133,6 +133,7 @@ export default {
             screenWidth: document.body.clientWidth,
             scrollTop:document.documentElement.scrollTop,
             bannerWidth:'',
+            bannerTop:'',
             clientHeight:'',
             eleWidth:'',
             eleHeight:''
@@ -141,9 +142,11 @@ export default {
     mounted () {
         const that = this;
         that.bannerWidth = that.$refs.banner.offsetWidth + 'px';
+        that.bannerTop = that.$refs.banner.offsetTop;
         that.clientHeight = that.$refs.banner.clientHeight;
         that.eleWidth = that.$refs.moveEle.getBoundingClientRect().width;
         that.eleHeight = that.eleWidth * 1.33333333333333;
+
         window.addEventListener('resize',()=>{
             that.screenWidth = document.body.clientWidth;
             that.bannerWidth = that.$refs.banner.offsetWidth + 'px';
@@ -186,7 +189,7 @@ export default {
         },
         scrollTop (val) {
             let clientTop = this.clientHeight - this.eleHeight;
-            if(val >= 16 && val <= clientTop && this.screenWidth > 750){
+            if(val >= this.bannerTop && val <= clientTop && this.screenWidth > 750){
                 this.fixedTop = 0;
                 this.fixedState = true;
             }else if(val >= clientTop && this.screenWidth > 750){
