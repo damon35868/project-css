@@ -16,6 +16,9 @@ import "./assets/css/tailwindCofig.css";
 //挂载tailwindcss
 Vue.use(tailwindcss);
 
+//引入全局字体配置样式
+import './assets/font/iconfont.css'
+
 Vue.config.productionTip = false
 
 new Vue({

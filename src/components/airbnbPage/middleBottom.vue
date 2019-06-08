@@ -45,7 +45,7 @@ export default {
 }
 </script>
 
-<style scope>
+<style scoped>
     .box-left{
         width: 32.8%;
     }

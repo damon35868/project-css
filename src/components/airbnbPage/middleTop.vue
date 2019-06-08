@@ -165,7 +165,7 @@ export default {
                 this.showState3 = false;
                 this.textBox3 = "From 2013 I have been organizing events showcasing Japanese cuisine to foreign students and people on working holidays living in Japan. Now I am running a restaurant and café in a traditional-style Japanese house in Asakusa, enjoying exchanging cultural differences with foreigners."; 
                 break;
-
+                
                 case 'box4': 
                 this.showState4 = false;
                 this.textBox4 = "Apart from just the recipe and preparation techniques, I will teach you how to add Japanese spirit into your udon noodles, to make the dish complete. After making the udon your friendly host will prepare tempura for you, another hugely popular Japanese dish, which will go perfectly with your handmade udon. Let's create a memorable experience together, helping you to make some of Japan’s most famous dishes and having as much fun as possible in the process!";
@@ -203,7 +203,7 @@ export default {
 }
 </script>
 
-<style scope>
+<style scoped>
     .box-left{
         width: 32.8%;
     }
