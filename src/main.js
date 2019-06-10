@@ -7,14 +7,8 @@ import 'swiper/dist/css/swiper.css'
 //挂载vue-awesome-swiper
 Vue.use(VueAwesomeSwiper);
 
-//引入tailwindcss的主文件和CSS文件
-import tailwindcss from 'tailwindcss'
-import "tailwindcss/dist/base.css";
-import "tailwindcss/dist/components.css";
-import "tailwindcss/dist/utilities.css";
+import "tailwindcss/dist/tailwind.css";
 import "./assets/css/tailwindCofig.css";
-//挂载tailwindcss
-Vue.use(tailwindcss);
 
 //引入全局字体配置样式
 import './assets/font/iconfont.css'
